@@ -1,5 +1,6 @@
 //1. Importing Dependencies
 import express from 'express'; //นำเข้าโมดูล express
+import test from 'node:test';
 
 //2. Configuration
 const app = express(); //กำหนดตัวแปร app เพื่อใช้สำหรับสร้าง API
@@ -15,3 +16,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+test
